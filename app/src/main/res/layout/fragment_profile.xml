@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile"
+    tools:context=".fragment.ProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="52dp"
+                android:layout_marginLeft="24dp"
+                android:text="Hi There, I’m"
+                android:textSize="14sp"
+                android:fontFamily="@font/mregular"
+                android:textColor="#E8F4FC"
+                android:id="@+id/greeting"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/greeting"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/msemibold"
+                android:text="Sari Rahmawati"
+                android:textColor="#E8F4FC"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/selfphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:src="@drawable/photo_profile" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am a highly motivated individual with a enthusiastic to constantly learn, grow and explore something new. I possess strong teamwork skills and quick learner. I have interests to Project Management, UI/UX Design and Android Developer."
+                android:fontFamily="@font/mregular"
+                android:textSize="14sp"
+                android:textColor="#1F1F1F"/>
+
+            <TextView
+                android:id="@+id/educationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:text="My Education"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/msemibold"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:textSize="24sp"
+                android:textColor="#1F1F1F"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/educationTitle"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/brawijaya_logo" />
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brawijaya University"
+                                android:fontFamily="@font/msemibold"
+                                android:textSize="14sp"
+                                android:textColor="#1F1F1F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bachelor's degree, Management Information Systems"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="@font/mregular"
+                                android:textSize="14sp"
+                                android:textColor="#1F1F1F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2020"
+                                android:fontFamily="@font/mregular"
+                                android:textSize="14sp"
+                                android:textColor="#1F1F1F"/>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
